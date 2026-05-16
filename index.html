@@ -422,11 +422,11 @@
             let resultText = `<p class="mb-4">You scored ${score} out of ${shuffledQuestions.length}.</p>`;
             // Provide different messages based on performance
             if (score === shuffledQuestions.length) {
-                resultText += "<p class='text-green-600'>Excellent! You got all correct!</p>";
+                resultText += "<p class='text-green-600'>Excellent! You got everything correct! Rank: Shark</p>";
             } else if (score >= shuffledQuestions.length * 0.7) {
-                resultText += "<p class='text-blue-600'>Well done! You have a good understanding.</p>";
+                resultText += "<p class='text-blue-600'>Well done! You have a good understanding of the sea. Rank: Clownfish</p>";
             } else {
-                resultText += "<p class='text-red-600'>Keep practicing! There's room for improvement.</p>";
+                resultText += "<p class='text-red-600'>There's room for improvement. Rank: Seahorse</p>";
             }
             resultDiv.innerHTML = resultText; // Update results div
         }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>*8KW's Quiz</title>
+    <title>8KW's Quiz</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -28,7 +28,7 @@
             /* Ensure the body takes full viewport height and allows flexbox centering */
             min-height: 100vh;
             /* Gradient Background: bottom left blue to top right pink */
-            background: linear-gradient(to top right, #3b82f6, #ec4899); 
+            background: linear-gradient(to top right, #FF0000, #FFFF00); 
         }
 
         /* General styling for question text */
@@ -206,7 +206,7 @@
                 </div>
 
             <div class="text-center text-gray-500 text-sm mt-8">
-                Made by Fionn Syam
+                Made by Fionn and Mustafa
             </div>
         </div>
     </div>
@@ -215,41 +215,41 @@
         // Define the quiz questions as an array of objects
         const quizQuestions = [
             {
-                question: "PLACEHOLDER",
+                question: "Approximately what percentage of human‑induced carbon emissions do oceans absorb?",
                 type: 'multiple_choice',
-                options: ["PLACEHOLDER", "PLACEHOLDER", "PLACEHOLDER"],
-                answer: "PLACEHOLDER"
+                options: ["Less than 5%", "About 10–15%", "Over 25%", "Over 50%"],
+                answer: "Over 25%"
             },
             {
-                question: "True or False: PLACEHOLDER",
+                question: "True or false: White sand on Caribbean beaches is actually made from parrotfish poop.",
                 type: 'true_false',
-                answer: "PLACEHOLDER"
+                answer: "True"
             },
             {
-                question: "PLACEHOLDER",
+                question: "What is the name for the intense fear of the sea or deep, dark water?  ",
                 type: 'short_answer',
-                answer: "PLACEHOLDER"
+                answer: "Thalassophobia"
             },
             {
-                question: "PLACEHOLDER",
+                question: "Which fish has a head covered by a transparent, fluid‑filled shield made of clear tissue?  ",
                 type: 'short_answer',
-                answer: "PLACEHOLDER"
+                answer: "Barreleye"
             },
             {
-                question: "PLACEHOLDER",
+                question: "How many known species are estimated to live in the ocean?",
                 type: 'multiple_choice',
-                options: ["PLACEHOLDER", "PLACEHOLDER", "PLACEHOLDER", "PLACEHOLDER"],
-                answer: "PLACEHOLDER"
+                options: ["About 50,000", "Over 240,000", "Over 1 million", "About 10,000"],
+                answer: "Over 240,000"
             },
             {
-                question: "PLACEHOLDER",
+                question: "What is the official date of World Ocean Day? ",
                 type: 'short_answer',
-                answer: "PLACEHOLDER"
+                answer: "June 8"
             },
             {
-                question: "PLACEHOLDER",
+                question: "Name the largest ocean on Earth.",
                 type: 'short_answer',
-                answer: "PLACEHOLDER"
+                answer: "Pacific Ocean"
             },
         ];
 
@@ -391,7 +391,7 @@
             // Display feedback
             feedbackDiv.classList.remove('hidden');
             if (isCorrect) {
-                feedbackDiv.textContent = "Correct!";
+                feedbackDiv.textContent = "Correct! :D";
                 feedbackDiv.className = 'correct mt-6 p-4 rounded-lg text-center font-bold text-lg'; // Apply correct styling
                 score++; // Increment score if correct
             } else {
